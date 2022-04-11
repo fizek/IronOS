@@ -40,7 +40,7 @@ jobs:
           cp LICENSE_RELEASE.md source/Hexfile/LICENSE_RELEASE.md
 
       - name: Archive ${{ matrix.model }} artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.model }}
           path: |
@@ -87,7 +87,7 @@ jobs:
           cp LICENSE_RELEASE.md source/Hexfile/LICENSE_RELEASE.md
 
       - name: Archive ${{ matrix.model }} artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.model }}_multi-lang
           path: |
